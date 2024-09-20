@@ -1,49 +1,101 @@
-<!DOCTYPE html>
-<html lang="en" dir="rtl">
+<!doctype html>
+<html dir="rtl" lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bend Law Group, PC</title>
-    <link href="css/BootstrapFiles/bootstrap.rtl.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/Main.css">
-
+  <meta charset="UTF-8">
+  <meta content="width=device-width,initial-scale=1" name="viewport">
+  <title>اسم برند</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link href="css/BootstrapFiles/bootstrap.rtl.min.css" rel="stylesheet">
+  <link href="css/Main.css" rel="stylesheet">
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="https://via.placeholder.com/40x40" alt="Logo" class="rounded-circle">
-                <span>Bend Law Group, PC</span>
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="#">ABOUT</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">SERVICES</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">CLIENTS</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">BLOG</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">PRESS</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#">CONTACT</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
 
-    <div class="hero">
-        <div class="hero-content">
-            <h1 class="display-4 mb-4">بزرگ فکر کن</h1>
-            <p class="lead">(415) 633-6841</p>
+  <!-- Navbar -->
+  <nav class="fixed-top navbar navbar-dark navbar-expand-lg">
+    <div class="container-md">
+      <a class="navbar-brand" href="#">
+        <img alt="Logo" class="rounded-circle" src="https://via.placeholder.com/40x40">
+        <span class="ms-2">اسم برند</span>
+      </a>
+      <button class="navbar-toggler" data-bs-target="#navbarNav" type="button" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" data-bs-toggle="collapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse justify-content-end navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#">خدمات</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">تماس با ما</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">در باره‌ی ما</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <div class="hero">
+    <!-- Carousel -->
+    <div id="carouselMain" class="carousel slide">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img alt="..." class="d-block w-100" src="./img/tehran.png">
         </div>
-        <div class="get-in-touch">
-            <a href="#" class="btn btn-outline-light">GET IN TOUCH</a>
+        <div class="carousel-item">
+          <img alt="..." class="d-block w-100" src="img/ye kakhi.png">
         </div>
-        <div class="pagination">
-            1 / 7
-        </div>
+      </div>
+      <!-- Carousel Controls -->
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselMain" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselMain" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Hero Content -->
+    <div class="hero-content position-absolute">
+      <h1 class="display-4 mb-4">بزرگ فکر کن</h1>
+      <p class="lead">(415) 633-6841</p>
+    </div>
+
+    <!-- Get in Touch Button -->
+    <div class="get-in-touch">
+      <a class="btn btn-outline-light" href="#">GET IN TOUCH</a>
+    </div>
+  </div>
+
+  <!-- Footer Section -->
+  <footer id="" class="bg-dark text-light pt-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-8">
+          <h5 class="mb-3">درباره‌ی ما</h5>
+          <p>
+            ما افتخار این را داریم که در ایران به عنوان یک دپارتمان حقوقی همچون دوست و یا عضوی از خانواده‌ی شما در دادگاه‌های ایران در طرح و پیگیری کلیه‌ی دعاوی حقوقی و قضایی همراه شما باشیم.
+          </p>
+          <p>
+            طرح، پیگیری و دفاع از موکلین و مراجعین در زمینه‌ی دعاوی: خانواده، تجاری، حقوقی، تعزیرات حکومتی، ارزی و صرافی، ثبت شرکت، اخذ اقامت و تنظیم و عقد هرگونه عقد قرارداد به وکالت از موکل در سراسر ایران.
+          </p>
+        </div>
+        <div class="col-md-4">
+          <h5 class="mb-3">وکلا</h5>
+          <ul class="list-unstyled">
+            <li>یاسر یزدان پناه</li>
+            <li>سهیلا رشیدی</li>
+            <li>نسیم رشیدی مهر</li>
+          </ul>
+        </div>
+      </div>
+      <hr class="my-4">
+      <div class="text-center">
+        <p>&copy; 2024 Bend Law Group, PC</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 </html>

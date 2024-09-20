@@ -1,7 +1,24 @@
+@font-face {
+    font-family: 'Yekan';
+    src: url('./../Font/BYekan/BYekan.ttf') format('truetype');
+}
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Yekan',Arial, sans-serif;
 }
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.hero {
+  min-height: 100vh; /* Makes sure the hero section takes up the full viewport height */
+}
+
+.footer {
+  margin-top: auto; /* Ensures the footer sticks to the bottom */
+}
+
 .navbar {
     background-color: rgba(0, 0, 0, 0.5);
 }
@@ -50,3 +67,20 @@ body {
     right: 20px;
     color: white;
 }
+.hero {
+    position: relative;
+  }
+  
+  .hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1; /* Ensures the content is on top of the carousel */
+    color: white;
+  }
+  
+  .carousel-inner {
+    z-index: 0; /* Makes sure the carousel stays behind the text */
+  }
+  
