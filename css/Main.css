@@ -1,86 +1,144 @@
 @font-face {
-    font-family: 'Yekan';
-    src: url('./../Font/BYekan/BYekan.ttf') format('truetype');
+  font-family: Yekan;
+  src: url('./../Font/BYekan/BYekan.ttf') format('truetype');
+}
+
+:root {
+  --navy-background: #1B2B48;
+  /* Dark navy background */
+  --light-text: #F0F4F8;
+  /* Light text color */
+  --gold-accent: #FFC857;
+  /* Gold accent color */
+  --teal-accent: #4FD1C5;
+  /* Teal accent color */
+  --coral-accent: #FF6B6B;
+  /* Coral accent color */
+}
+.accent-color{
+  color: var(--gold-accent);
+}
+
+img {
+  max-width: 100%;
+  /* Ensure images are responsive */
+  height: auto;
+  /* Maintain aspect ratio */
 }
 
 body {
-    font-family: 'Yekan',Arial, sans-serif;
+  font-family: Yekan, Arial, sans-serif;
+  /* Custom font for body */
 }
-html, body {
+
+/* Set full height for body and html */
+body,
+html {
   height: 100%;
   margin: 0;
+  /* Remove default margin */
 }
 
-.hero {
-  min-height: 100vh; /* Makes sure the hero section takes up the full viewport height */
-}
-
-.footer {
-  margin-top: auto; /* Ensures the footer sticks to the bottom */
-}
-
+/* Background colors */
+.bg-Main,
 .navbar {
-    background-color: rgba(0, 0, 0, 0.5);
+  background-color: var(--navy-background);
 }
+
+
+/* Text colors */
+.w-color {
+  color: var(--light-text);
+}
+
+.w-color:hover {
+  color: var(--gold-accent);
+  /* Change color on hover */
+}
+
+/* Navbar brand styles */
 .navbar-brand {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
+
 .navbar-brand img {
-    width: 40px;
-    height: 40px;
-    margin-right: 10px;
+  width: 40px;
+  /* Logo width */
+  height: 40px;
+  /* Logo height */
+  margin-right: 10px;
+  /* Spacing between logo and text */
 }
-.hero {
-    background-image: url('https://source.unsplash.com/random/1600x900/?san-francisco');
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
+
+/* Text stroke effect */
+.webstrocke {
+  -webkit-text-stroke: 1px black;
+  /* Stroke for text */
 }
-.hero-content {
-    text-align: center;
-    color: white;
-    z-index: 1;
-}
+
+/* Hero section background overlay */
 .hero::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background-color: rgba(0, 0, 0, 0.5);
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, .5);
+  /* Semi-transparent overlay */
 }
+
+/* Position for the get-in-touch button */
 .get-in-touch {
-    position: absolute;
-    bottom: 50px;
-    left: 50%;
-    transform: translateX(-50%);
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  /* Center horizontally */
 }
-.pagination {
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-    color: white;
-}
+
+/* Hero section styles */
 .hero {
-    position: relative;
-  }
-  
-  .hero-content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: 1; /* Ensures the content is on top of the carousel */
-    color: white;
-  }
-  
-  .carousel-inner {
-    z-index: 0; /* Makes sure the carousel stays behind the text */
-  }
-  
+  background-size: cover;
+  /* Cover the entire section */
+  background-position: center;
+  /* Center the background */
+  height: 100vh;
+  /* Full viewport height */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  /* Relative positioning for child elements */
+  overflow: hidden;
+  margin: 0;
+
+}
+
+/* Center the hero content */
+.hero-content {
+  text-align: center;
+  /* Center text */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* Center vertically and horizontally */
+  z-index: 1;
+  /* Ensure text is above background */
+}
+
+/* Set z-index for carousel inner to be behind hero content */
+.carousel-inner {
+  z-index: 0;
+}
+
+.hero img {
+  height: 100vh;
+  /* Full height for hero images */
+  width: 100vw;
+  /* Full width for hero images */
+  overflow: hidden;
+  /* Hide overflow */
+}
