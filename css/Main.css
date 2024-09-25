@@ -135,9 +135,10 @@ html {
 }
 
 .hero img {
-  height: 100vh;
+  object-fit: cover;
+  height: 100vh ;
   /* Full height for hero images */
-  width: 100vw;
+  width: 100vw  ;
   /* Full width for hero images */
   overflow: hidden;
   /* Hide overflow */
