@@ -4,9 +4,9 @@
 }
 
 :root {
-  --navy-background: #1B2B48;
+  --navy-background: #1e1e1e;
   /* Dark navy background */
-  --light-text: #F0F4F8;
+  --light-text: #ffffe0;
   /* Light text color */
   --gold-accent: #FFC857;
   /* Gold accent color */
@@ -40,9 +40,12 @@ html {
 }
 
 /* Background colors */
-.bg-Main,
+.bg-Main{
+  background:var(--navy-background);
+}
 .navbar {
-  background-color: var(--navy-background);
+  background: rgb(0,0,0);
+  background: radial-gradient(circle, rgba(0,0,0,0.27503501400560226) 0%, rgba(0,0,0,0.7652310924369747) 100%);
 }
 
 
