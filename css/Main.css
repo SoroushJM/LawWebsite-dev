@@ -127,12 +127,9 @@ html {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  /* Center vertically and horizontally */
   z-index: 1;
-  /* Ensure text is above background */
 }
 
-/* Set z-index for carousel inner to be behind hero content */
 .carousel-inner {
   z-index: 0;
 }
@@ -140,9 +137,20 @@ html {
 .hero img {
   object-fit: cover;
   height: 100vh ;
-  /* Full height for hero images */
   width: 100vw  ;
-  /* Full width for hero images */
   overflow: hidden;
-  /* Hide overflow */
+}
+.flag-icon {
+  width: 1.33333333em !important; 
+  margin-right: 2px; 
+  vertical-align: middle; 
+}
+
+
+button.border-light-subtle{
+  border-color:rgba(255, 255, 255) !important;
+}
+button.border-light-subtle.show{
+  border-width: 0.125rem;
+  border-color:rgba(255, 255, 255) !important;
 }
