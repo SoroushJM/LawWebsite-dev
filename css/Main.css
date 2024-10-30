@@ -47,6 +47,7 @@ html {
   background: rgb(0,0,0);
   background: radial-gradient(circle, rgba(0,0,0,0.27503501400560226) 0%, rgba(0,0,0,0.7652310924369747) 100%);
   padding-left: 15px;
+  padding-right: 15px;
 }
 
 .navbar-nav {
