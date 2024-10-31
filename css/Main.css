@@ -169,4 +169,5 @@ button.border-light-subtle.show{
 .logo-img{
   width: auto;
   max-width: 200px;
+  align-self: center;
 }
