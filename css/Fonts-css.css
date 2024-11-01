@@ -1,0 +1,105 @@
+@font-face {
+  font-family: Yekan;
+  src: url("./../Font/BYekan/BYekan.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Museo Sans Rounded";
+  font-style: normal;
+  font-weight: 100;
+  src: local("Museo Sans Rounded 100"),
+    url("../Font/MuseoSansRounded/MuseoSansRounded100.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Museo Sans Rounded";
+  font-style: normal;
+  font-weight: 300;
+  src: local("Museo Sans Rounded 300"),
+    url("../Font/MuseoSansRounded/MuseoSansRounded300.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Museo Sans Rounded";
+  font-style: normal;
+  font-weight: 500;
+  src: local("Museo Sans Rounded 500"),
+    url("../Font/MuseoSansRounded/MuseoSansRounded500.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Museo Sans Rounded";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Museo Sans Rounded 700"),
+    url("../Font/MuseoSansRounded/MuseoSansRounded700.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Museo Sans Rounded";
+  font-style: normal;
+  font-weight: 900;
+  src: local("Museo Sans Rounded 900"),
+    url("../Font/MuseoSansRounded/MuseoSansRounded900.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Museo Sans Rounded";
+  font-style: normal;
+  font-weight: 1000;
+  src: local("Museo Sans Rounded 1000"),
+    url("../Font/MuseoSansRounded/MuseoSansRounded1000.woff") format("woff");
+}
+
+/* Apply Museo Sans Rounded font to all headers and paragraphs */
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-family: "Museo Sans Rounded" !important;
+}
+
+body{
+    font-family: "MuseoSansRounded" !important;
+}
+
+/* Set specific font weights for each heading level */
+h1 {
+  font-weight: 900; /* Boldest for the main title */
+  font-size: 2.5em; /* Adjust size as needed */
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 2em;
+}
+
+h3 {
+  font-weight: 500;
+  font-size: 1.75em;
+}
+
+h4 {
+  font-weight: 500;
+  font-size: 1.5em;
+}
+
+h5 {
+  font-weight: 300;
+  font-size: 1.25em;
+}
+
+h6 {
+  font-weight: 300;
+  font-size: 1em;
+}
+
+/* Set paragraph font */
+p {
+  font-weight: 400;
+  font-size: 1.3em;
+}

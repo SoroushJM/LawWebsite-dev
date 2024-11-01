@@ -1,7 +1,3 @@
-@font-face {
-  font-family: Yekan;
-  src: url('./../Font/BYekan/BYekan.ttf') format('truetype');
-}
 
 :root {
   --navy-background: #1e1e1e;
@@ -24,11 +20,6 @@ img {
   /* Ensure images are responsive */
   height: auto;
   /* Maintain aspect ratio */
-}
-
-body {
-  font-family: Yekan, Arial, sans-serif;
-  /* Custom font for body */
 }
 
 /* Set full height for body and html */
