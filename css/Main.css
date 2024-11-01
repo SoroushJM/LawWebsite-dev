@@ -163,14 +163,14 @@ button.border-light-subtle.show {
 .avatar-img {
   border-radius: 50%;
   width: auto;
-  max-width: 200px;
+  max-width: 150px;
 }
 .logo-img {
   width: auto;
-  max-width: 200px;
+  max-width: 150px;
   align-self: center;
 }
 
 .dark-fade-bg {
-  background-color: rgba(0, 0, 0, 0.5); /* 50% opacity for black background */
+  background-color: rgba(255, 255, 255, 0.35); /* opacity for black background */
 }
