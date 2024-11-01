@@ -23,17 +23,16 @@
 
 <body>
 
-  <nav class="fixed-top navbar navbar-dark navbar-expand-lg flex-wrap"> <!-- Navigation Bar -->
+  <nav class="fixed-top navbar navbar-dark navbar-expand-lg"> <!-- Navigation Bar -->
 
-    <div class=""> <!-- logo -->
-
+    <div> <!-- logo -->
       <a class="navbar-brand" href="#">
         <img src="Svgs/logo/legaleyes-logo-blue.svg" alt="logo image" width="50px">
         <span class="ms-2">LegalEyes</span>
       </a>
     </div>
 
-    <div class="dropdown">
+    <div class="dropdown flex-grow-1">
       <button class="btn bg-transparent border-light-subtle text-white dropdown-toggle" type="button"
         id="LanguageDropDown" data-bs-toggle="dropdown" aria-expanded="false">
         Lang
@@ -44,6 +43,8 @@
         <li><a class="dropdown-item" href="#">English</a></li>
       </ul>
     </div>
+
+
     <!-- Toggler for mobile view -->
     <button class="navbar-toggler" data-bs-target="#navbarNav" type="button" aria-controls="navbarNav"
       aria-expanded="false" aria-label="Toggle navigation" data-bs-toggle="collapse">
@@ -57,7 +58,6 @@
         <li class="nav-item"><a class="nav-link w-color" href="#">Contact</a></li>
         <li class="nav-item"><a class="nav-link w-color" href="#">About</a></li>
       </ul>
-    </div>
     </div>
   </nav>
 
@@ -77,15 +77,21 @@
       </div>
 
       <!-- Carousel controls -->
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselMain" data-bs-slide="prev">
+      <button class="carousel-control-prev z-index1000" type="button" data-bs-target="#carouselMain"
+        data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
       </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselMain" data-bs-slide="next">
+      <button class="carousel-control-next z-index1000" type="button" data-bs-target="#carouselMain"
+        data-bs-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
     </div>
+
+    <div class="hero-content position-absolute dark-fade-bg w-100 h-100">
+    </div>
+
 
     <!-- Hero Content -->
     <div class="hero-content position-absolute">
@@ -95,7 +101,7 @@
 
     <!-- Get in Touch Button -->
     <div class="get-in-touch">
-      <a class="btn btn-outline-light" href="#footer">Contact Us</a>
+      <a class="btn btn-outline-light " href="#footer">Contact Us</a>
     </div>
   </div>
 
