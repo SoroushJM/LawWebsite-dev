@@ -105,7 +105,39 @@ button.carousel-control-next {
   left: 50%;
   transform: translateX(-50%);
   z-index: 1000;
-  /* Center horizontally */
+  color: #ffffff;
+  letter-spacing: 3px;
+}
+.cta-arrow {
+  background: url('../svgs/NavArrowHover.png') no-repeat center center;
+  background-size: auto 100%;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+  width: 40px;
+  height: 30px;
+  margin: 0 auto;
+  position: relative;
+  top: 0;
+  -webkit-transition: top 0.15s linear;
+  -moz-transition: top 0.15s linear;
+  -o-transition: top 0.15s linear;
+  -ms-transition: top 0.15s linear;
+  transition: top 0.15s linear;
+}
+.cta-arrow:hover{
+  top: 5px;
+}
+
+.get-in-touch:hover .cta-arrow{
+  top: 5px;
+}
+
+.a-btn{
+  text-decoration: none;
+  color: white;
 }
 
 /* Hero section styles */
@@ -174,3 +206,4 @@ button.border-light-subtle.show {
 .dark-fade-bg {
   background-color: rgba(255, 255, 255, 0.35); /* opacity for black background */
 }
+
