@@ -109,7 +109,7 @@ button.carousel-control-next {
   letter-spacing: 3px;
 }
 .cta-arrow {
-  background: url("../svgs/arrow.svg") no-repeat center center;
+  background: url("../Svgs/arrow.svg") no-repeat center center;
   background-size: auto 100%;
   -webkit-transform: rotate(90deg);
   -moz-transform: rotate(90deg);
