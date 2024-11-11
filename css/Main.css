@@ -109,7 +109,7 @@ button.carousel-control-next {
   letter-spacing: 3px;
 }
 .cta-arrow {
-  background: url('../svgs/NavArrowHover.png') no-repeat center center;
+  background: url("../svgs/arrow.svg") no-repeat center center;
   background-size: auto 100%;
   -webkit-transform: rotate(90deg);
   -moz-transform: rotate(90deg);
@@ -126,16 +126,17 @@ button.carousel-control-next {
   -o-transition: top 0.15s linear;
   -ms-transition: top 0.15s linear;
   transition: top 0.15s linear;
+  filter: drop-shadow(1px 1px 1px rgba(0, 0, 0, 0.7))
 }
-.cta-arrow:hover{
+.cta-arrow:hover {
   top: 5px;
 }
 
-.get-in-touch:hover .cta-arrow{
+.get-in-touch:hover .cta-arrow {
   top: 5px;
 }
 
-.a-btn{
+.a-btn {
   text-decoration: none;
   color: white;
 }
@@ -143,16 +144,12 @@ button.carousel-control-next {
 /* Hero section styles */
 .hero {
   background-size: cover;
-  /* Cover the entire section */
   background-position: center;
-  /* Center the background */
   height: 100vh;
-  /* Full viewport height */
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
-  /* Relative positioning for child elements */
   overflow: hidden;
   margin: 0;
 }
@@ -204,6 +201,23 @@ button.border-light-subtle.show {
 }
 
 .dark-fade-bg {
-  background-color: rgba(255, 255, 255, 0.35); /* opacity for black background */
+  background-color: rgba(
+    255,
+    255,
+    205,
+    0.35
+  ); /* opacity for black background */
 }
 
+.get-in-touch-icon {
+  display: inline-block;
+  width: 2rem;
+  height: 2rem;
+  background-repeat: no-repeat;
+  background-position: 50%;
+  background-size: 100% 100%;
+}
+.text-shadow-4-white-bg{
+
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3); /* Adjust values as needed */
+}
