@@ -205,10 +205,10 @@ button.border-light-subtle.show {
 
 .dark-fade-bg {
   background-color: rgba(
-    255,
-    255,
-    205,
-    0.35
+    34,
+    34,
+    34,
+    1
   ); /* opacity for black background */
 }
 
