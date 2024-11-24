@@ -8,7 +8,7 @@ const carousel = new bootstrap.Carousel(myCarouselElement, {
 });
 
 document.addEventListener("DOMContentLoaded", function () {
-  const languageSelect = document.getElementById("language-select");
+  const languageSelect = document.getElementById("LanguageDropDown");
 
   // Function to switch language based on selected value
   function switchLanguage(language) {
@@ -31,6 +31,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // Event listener to change language on selection
   languageSelect.addEventListener("change", (event) => {
     const selectedLanguage = event.target.value;
+    console.log("this is target value" + event.target.value);
     switchLanguage(selectedLanguage);
   });
 
