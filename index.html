@@ -1,15 +1,12 @@
 <!doctype html>
-<html dir="rtl" lang="en">
+<html dir="ltr" lang="en">
 
 <head>
-  <html lang="fa">
   <meta charset="UTF-8">
   <meta content="width=device-width, initial-scale=1" name="viewport">
-  <title>legaleyes</title>
-  
-  <script type="text/javascript">
-    window.location.replace("./en.html"); // Redirect URL
-  </script>
+  <title>LegalEyes</title>
+
+
   <!-- Custom fonts -->
   <link rel="stylesheet" href="./css/Fonts-css.css">
 
@@ -25,27 +22,22 @@
 
 <body>
 
-  <nav class="fixed-top navbar navbar-dark navbar-expand-lg flex-wrap"> <!-- Navigation Bar -->
+  <nav class="fixed-top navbar navbar-dark navbar-expand-lg"> <!-- Navigation Bar -->
 
-    <div class=""> <!-- logo -->
-
+    <div> <!-- logo -->
       <a class="navbar-brand" href="#">
         <img src="Svgs/logo/legaleyes-logo-blue.svg" alt="logo image" width="50px" loading="lazy">
         <span class="ms-2">LegalEyes</span>
       </a>
     </div>
 
-    <div class="dropdown">
-      <button class="btn bg-transparent border-light-subtle text-white dropdown-toggle" type="button"
-        id="LanguageDropDown" data-bs-toggle="dropdown" aria-expanded="false">
-        Lang
-      </button>
-      <ul class="dropdown-menu" aria-labelledby="LanguageDropDown">
-        <li><a class="dropdown-item" href="#">العربية</a></li>
-        <li><a class="dropdown-item" href="#">کردی</a></li>
-        <li><a class="dropdown-item" href="#">English</a></li>
-      </ul>
-    </div>
+    <select class="form-select w-auto me-auto" id="LanguageDropDown">
+      <option selected value="English">English</option>
+      <option value="Kurdish">کردی</option>
+      <option value="Arabic">العربية</option>
+    </select>
+
+
     <!-- Toggler for mobile view -->
     <button class="navbar-toggler" data-bs-target="#navbarNav" type="button" aria-controls="navbarNav"
       aria-expanded="false" aria-label="Toggle navigation" data-bs-toggle="collapse">
@@ -55,11 +47,16 @@
     <!-- Navigation links -->
     <div class="collapse justify-content-end navbar-collapse" id="navbarNav">
       <ul class="navbar-nav">
-        <li class="nav-item"><a class="nav-link w-color" href="#">خدمات</a></li>
-        <li class="nav-item"><a class="nav-link w-color" href="#">تماس با ما</a></li>
-        <li class="nav-item"><a class="nav-link w-color" href="#">در باره‌ی ما</a></li>
+        <li class="nav-item">
+          <a class="nav-link w-color translatable"
+           href="#"
+           data-English="Services"
+           data-Arabic="السرویسز"
+           data-Kurdish="Im kord">Services</a>
+        </li>
+        <li class="nav-item"><a class="nav-link w-color translatable" href="#">Contact</a></li>
+        <li class="nav-item"><a class="nav-link w-color translatable" href="#">About</a></li>
       </ul>
-    </div>
     </div>
   </nav>
 
@@ -68,62 +65,80 @@
     <div id="carouselMain" class="carousel slide" data-bs-ride="carousel" data-bs-interval="10000">
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img alt="Sa'dabad Complex" class="d-block" src="./img/Sa'dabadComplex.jpg" loading="lazy">
+          <img alt="Sa'dabad Complex" class="d-block" src="./img/Sa'dabadComplex.jpg">
         </div>
         <div class="carousel-item">
-          <img alt="Tehran" class="d-block" src="img/Tehran-2.jpg" loading="lazy">
+          <img alt="Tehran" class="d-block" src="img/Tehran-2.jpg">
         </div>
         <div class="carousel-item">
-          <img alt="Additional Image" class="d-block" src="img/tehrancity.jpg" loading="lazy">
+          <img alt="Additional Image" class="d-block" src="img/tehrancity.jpg">
         </div>
       </div>
 
       <!-- Carousel controls -->
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselMain" data-bs-slide="prev">
+      <button class="carousel-control-prev z-index1000" type="button" data-bs-target="#carouselMain"
+        data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Previous</span>
       </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselMain" data-bs-slide="next">
+      <button class="carousel-control-next z-index1000" type="button" data-bs-target="#carouselMain"
+        data-bs-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
         <span class="visually-hidden">Next</span>
       </button>
     </div>
 
+    <div class="hero-content position-absolute dark-fade-bg w-100 h-100">
+    </div>
+
+
     <!-- Hero Content -->
-    <div class="hero-content position-absolute">
-      <h2 class="display-4 mb-4" style="color:white;">حامی حقوق شما</h2>
-      <h1 style="color:white;" class="lead">(021) 44428406</h1>
+    <div class="hero-content position-absolute text-shadow-4-white-bg">
+      <h2 class="display-4 mb-4 text-white">LegalEyes</h2>
+      <h1 class="lead text-white">(021) 44428406</h1>
     </div>
 
     <!-- Get in Touch Button -->
-    <div class="get-in-touch">
-      <a class="btn btn-outline-light" href="#footer">تماس با ما</a>
+
+    <div class="col get-in-touch text-shadow-4-white-bg">
+      <div class="row">
+        <a class="a-btn Text-black-outline" href="#footer">GET IN TOUCH</a>
+      </div>
+      <div class="row">
+        <a class="cta-arrow" href="#footer">
+          <span class="get-in-touch-icon"></span>
+        </a>
+      </div>
     </div>
+
+
+
+
   </div>
 
   <!-- Footer Section -->
   <footer class="bg-Main text-light pt-5 w-100" id="footer">
     <div class="container">
-      <h2 class="mb-4 accent-color ">وکلا</h2>
+      <h2 class="mb-4 accent-color text-center">Lawyers</h2>
       <div class="row">
         <div class="col  d-flex flex-column">
           <div class="text-center">
-            <img class="avatar-img" src="img/avatar.png" alt="Avatar" loading="lazy">
+            <img class="avatar-img" src="img/avatar2.jpg" alt="Avatar" loading="lazy">
           </div>
-          <p class="mt-2 text-center">یاسر یزدان پناه</p>
+          <p class="mt-2 text-center">Yaser Yazdanpanah</p>
         </div>
         <div class="col  d-flex flex-column">
           <div class="text-center">
-            <img class="avatar-img" src="img/avatar.png" alt="Avatar" loading="lazy">
+            <img class="avatar-img" src="img/avatar3.jpg" alt="Avatar" loading="lazy">
           </div>
-          <p class="mt-2 text-center">سهیلا رشیدی</p>
+          <p class="mt-2 text-center">Soheila Rashidi</p>
         </div>
-        <div class="col  d-flex flex-column">
-          <div class="text-center">
-            <img class="avatar-img" src="img/avatar.png" alt="Avatar" loading="lazy">
-          </div>
 
-          <p class="mt-2 text-center">نسیم رشیدی مهر</p>
+        <div class="col d-flex flex-column">
+          <div class="text-center">
+            <img class="avatar-img" src="img/avatar1.jpg" alt="Avatar" loading="lazy">
+          </div>
+          <p class="mt-2 text-center">Nasim Rashidimehr</p>
         </div>
       </div>
     </div>
@@ -132,14 +147,14 @@
 
     <div class="bg-black py-4 m-0">
       <div class="container">
-        <h5 class="mb-3 accent-color">درباره‌ی ما</h5>
-
-        <p class="text-start">
-          ما افتخار این را داریم که ایران به عنوان یک دپارتمان حقوقی همچون دوست و یا عضوی از خانواده‌ی شما در دادگاه‌های
-          ایران در طرح و پیگیری کلیه‌ی دعاوی حقوقی و قضایی همراه شما باشیم.
+        <p class="text-center">
+          We are proud to serve as your trusted legal partner in Iran, offering support and advocacy in all legal and
+          judicial matters, by delivering exceptional results before Iranian courts.
           <br>
-          طرح، پیگیری و دفاع از موکلین و مراجعین در زمینه‌ی دعاوی: خانواده، تجاری، حقوقی، تعزیرات حکومتی، ارزی و صرافی،
-          ثبت شرکت، اخذ اقامت و تنظیم و عقد هرگونه عقد قرارداد به وکالت از موکل در سراسر ایران.
+          Our legal department offers a wide range of services, including the initiation, pursuit, and defense of cases
+          involving family law, commercial disputes, civil litigation, governmental penalties(Discretionary
+          Punishments), currency and exchange regulations, company registration, residency applications, and contract
+          drafting and execution on behalf of our clients throughout Iran.
         </p>
       </div>
     </div>
@@ -147,28 +162,41 @@
     <hr class="my-4 mt-0">
 
 
-    <div class="container">
-      <div class="row">
-        <h6><i class="bi bi-telephone-fill"></i> تماس با ما</h6>
-        <p>
-          <i class="bi bi-telephone-fill"></i>
-          <span>(021) 44428406</span>
-        </p>
+    <div class="m-2 row">
+      <div class="col-md-4 col-sm-12 p-4 border-end">
+        <h4>Contact Us</h4>
+        <div class="row">
+          <div class="col-1"></div>
+          <span class="col-11">(021) 44428406</span>
+        </div>
+
+        <div>
+          <h4>Location</h4>
+          <div class=" row">
+            <div class="col-1"></div>
+            <span class="col-11">Unit 18, 4th floor(northern), No 2, Beheshtan 6 alley, Pasdaran Ave, Tehran,
+              Iran</span>
+          </div>
+        </div>
       </div>
 
-      <!-- Google Map Embed -->
-      <div class="mt-4 col-md-8">
-        <h6>موقعیت ما</h6>
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345092094!2d144.95373531563116!3d-37.81627997975109!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11c1fb%3A0xf5bfb7b2be65a7e2!2z2LTZhdmE2YbYp9mE2KfYsdmK!5e0!3m2!1sen!2s!4v1633960799033!5m2!1sen!2s"
-          style="border:0;" allowfullscreen="true" loading="lazy">
-        </iframe>
+
+      <div class="col-sm-12 col-md-8 row align-items-center mt-3">
+
+        <div class="col text-center">
+          <img class="logo-img" src="img/logos/d2.png" alt="logo" loading="lazy">
+        </div>
+        <div class="col text-center">
+          <img class="logo-img" src="img/logos/d1.png" alt="logo" loading="lazy">
+        </div>
+        <div class="col text-center">
+          <img class="logo-img" src="Svgs/logo/legaleyes-logo-blue.svg" alt="logo" loading="lazy">
+        </div>
       </div>
     </div>
     <hr class="my-4">
     <div class="text-center">
-      <p>&copy; </p>
-    </div>
+      <p>...</p>
     </div>
   </footer>
 
