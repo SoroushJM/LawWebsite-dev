@@ -20,7 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
     elements.forEach((element) => {
       const translation = element.getAttribute(`data-${language}`);
       if (translation) {
-        element.textContent = translation;
+        element.innerHTML = translation;
       }
     });    
     let alltags =document.querySelectorAll('span, h1, h2, h3, h4, h5, h6, body');
