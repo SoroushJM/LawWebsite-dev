@@ -1,11 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>LegalEyes</title>
+
+
+    <!-- Custom fonts -->
+    <link rel="stylesheet" href="./css/Fonts-css.css">
+
+    <!-- Google Fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- Bootstrap-->
+    <link href="css/BootstrapFiles/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS-->
+    <link href="css/Main.css" rel="stylesheet">
 </head>
+
 <body>
-    
+    <nav class="fixed-top navbar navbar-dark navbar-expand-lg"> <!-- Navigation Bar -->
+
+        <div> <!-- logo -->
+            <a class="navbar-brand" href="#">
+                <img src="Svgs/logo/legaleyes-logo-blue.svg" alt="logo image" width="50px" loading="lazy">
+                <span class="ms-2">LegalEyes</span>
+            </a>
+        </div>
+
+        <select class="form-select w-auto me-auto" id="LanguageDropDown">
+            <option selected value="English">English</option>
+            <option value="Kurdish">کردی</option>
+            <option value="Arabic">العربية</option>
+        </select>
+
+
+        <!-- Toggler for mobile view -->
+        <button class="navbar-toggler" data-bs-target="#navbarNav" type="button" aria-controls="navbarNav"
+            aria-expanded="false" aria-label="Toggle navigation" data-bs-toggle="collapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navigation links -->
+        <div class="collapse justify-content-end navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link w-color translatable" href="#" data-English="Services" data-Arabic="خدمات"
+                        data-Kurdish="kord"></a>
+                </li>
+                <li class="nav-item"><a class="nav-link w-color translatable" href="#" data-English="Contact"
+                        data-Arabic="اتصال" data-Kurdish="kord"></a></li>
+                <li class="nav-item"><a class="nav-link w-color translatable" href="#" data-English="About"
+                        data-Arabic="معلومات" data-Kurdish="kord"></a></li>
+            </ul>
+        </div>
+    </nav>
 </body>
+
 </html>

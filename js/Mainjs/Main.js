@@ -10,6 +10,10 @@ const carousel = new bootstrap.Carousel(myCarouselElement, {
 document.addEventListener("DOMContentLoaded", function () {
   const languageSelect = document.getElementById("LanguageDropDown");
 
+  // language can only be this values :
+  // English
+  // Kurdish
+  // Arabic
   // Function to switch language based on selected value
   function switchLanguage(language) {
     const elements = document.querySelectorAll(".translatable");
@@ -19,7 +23,19 @@ document.addEventListener("DOMContentLoaded", function () {
         element.textContent = translation;
       }
     });    
-
+    let alltags =document.querySelectorAll('span, h1, h2, h3, h4, h5, h6, body');
+    if(language==="English")
+    {
+      document.body.style.direction = "ltr";
+      document.body.style.fontFamily = "MuseoSansRounded";
+      console.log("english language has been selected");
+      alltags.forEach((x)=>x.style.setProperty('font-family', 'MuseoSansRounded', 'important'));
+    }
+    else{
+      document.body.style.direction = "rtl"
+      document.body.style.fontFamily = "Yekan";
+      alltags.forEach((x)=>x.style.setProperty('font-family', 'Yekan', 'important'));
+    }
   }
 
   // Event listener to change language on selection

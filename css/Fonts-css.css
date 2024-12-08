@@ -1,5 +1,5 @@
 @font-face {
-  font-family: Yekan;
+  font-family: "Yekan";
   src: url("./../Font/BYekan/BYekan.ttf") format("truetype");
 }
 
@@ -52,7 +52,7 @@
 }
 
 /* Apply Museo Sans Rounded font to all headers and paragraphs */
-span,
+/* span,
 h1,
 h2,
 h3,
@@ -60,14 +60,11 @@ h4,
 h5,
 h6,
 p {
-  font-family: "Museo Sans Rounded" !important;
-}
+  font-family: "Museo Sans Rounded" ;
+} */
 
-*{
-  font-family: "Museo Sans Rounded" !important;
-}
 body {
-  font-family: "MuseoSansRounded" !important;
+  font-family: "MuseoSansRounded";
 }
 
 /* Set specific font weights for each heading level */
