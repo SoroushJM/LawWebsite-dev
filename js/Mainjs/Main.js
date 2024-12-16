@@ -1,6 +1,6 @@
 //set up carousel
 console.log("main js loaded");
-const myCarouselElement = document.querySelector("#carouselMain");
+const myCarouselElement = document.querySelector("#navbarNav");
 
 const carousel = new bootstrap.Carousel(myCarouselElement, {
   interval: 10000,

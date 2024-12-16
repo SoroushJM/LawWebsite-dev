@@ -1,62 +1,181 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html dir="ltr" lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta content="width=device-width, initial-scale=1" name="viewport">
-    <title>LegalEyes</title>
+  <meta charset="UTF-8">
+  <meta content="width=device-width, initial-scale=1" name="viewport">
+  <title>LegalEyes</title>
 
 
-    <!-- Custom fonts -->
-    <link rel="stylesheet" href="./css/Fonts-css.css">
+  <!-- Custom fonts -->
+  <link rel="stylesheet" href="./css/Fonts-css.css">
 
-    <!-- Google Fonts-->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <!-- Google Fonts-->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
-    <!-- Bootstrap-->
-    <link href="css/BootstrapFiles/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap-->
+  <link href="css/BootstrapFiles/bootstrap.min.css" rel="stylesheet">
 
-    <!-- Custom CSS-->
-    <link href="css/Main.css" rel="stylesheet">
+  <!-- Custom CSS-->
+  <link href="css/Main.css" rel="stylesheet">
 </head>
 
 <body>
-    <nav class="fixed-top navbar navbar-dark navbar-expand-lg"> <!-- Navigation Bar -->
 
-        <div> <!-- logo -->
-            <a class="navbar-brand" href="#">
-                <img src="Svgs/logo/legaleyes-logo-blue.svg" alt="logo image" width="50px" loading="lazy">
-                <span class="ms-2">LegalEyes</span>
-            </a>
+  <nav class="fixed-top navbar navbar-dark navbar-expand-lg"> <!-- Navigation Bar -->
+
+    <div> <!-- logo -->
+      <a class="navbar-brand" href="#">
+        <img src="Svgs/logo/legaleyes-logo-blue.svg" alt="logo image" width="50px" loading="lazy">
+        <span class="ms-2">LegalEyes</span>
+      </a>
+    </div>
+
+    <select class="form-select w-auto me-auto" id="LanguageDropDown">
+      <option selected value="English">English</option>
+      <option value="Kurdish">کردی</option>
+      <option value="Arabic">العربية</option>
+    </select>
+
+
+    <!-- Toggler for mobile view -->
+    <button class="navbar-toggler" data-bs-target="#navbarNav" type="button" aria-controls="navbarNav"
+      aria-expanded="false" aria-label="Toggle navigation" data-bs-toggle="collapse">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Navigation links -->
+    <div class="collapse justify-content-end navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link w-color translatable"
+           href="#"
+           data-English="Services"
+           data-Arabic="خدمات"
+           data-Kurdish="kord"></a>
+        </li>
+        <li class="nav-item"><a class="nav-link w-color translatable" href="#" 
+          data-English="Contact"
+          data-Arabic="اتصال"
+          data-Kurdish="kord"></a></li>
+        <li class="nav-item"><a class="nav-link w-color translatable" href="./AboutUs.html" 
+          data-English="About"
+          data-Arabic="معلومات"
+          data-Kurdish="kord"></a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- about us body -->
+  <div class="">
+
+  </div>
+
+  <!-- Footer Section -->
+  <footer class="bg-Main text-light pt-5 w-100" id="footer">
+    <div class="container">
+      <h2 class="mb-4 accent-color text-center translatable"
+      data-Arabic="المحامون"
+      data-English="Lawyers"
+      data-Kurdish="وکلا"></h2>
+      <div class="row">
+        <div class="col  d-flex flex-column">
+          <div class="text-center">
+            <img class="avatar-img" src="img/avatar2.jpg" alt="Avatar" loading="lazy">
+          </div>
+          <p class="mt-2 text-center">Yaser Yazdanpanah</p>
+        </div>
+        <div class="col  d-flex flex-column">
+          <div class="text-center">
+            <img class="avatar-img" src="img/avatar3.jpg" alt="Avatar" loading="lazy">
+          </div>
+          <p class="mt-2 text-center">Soheila Rashidi</p>
         </div>
 
-        <select class="form-select w-auto me-auto" id="LanguageDropDown">
-            <option selected value="English">English</option>
-            <option value="Kurdish">کردی</option>
-            <option value="Arabic">العربية</option>
-        </select>
-
-
-        <!-- Toggler for mobile view -->
-        <button class="navbar-toggler" data-bs-target="#navbarNav" type="button" aria-controls="navbarNav"
-            aria-expanded="false" aria-label="Toggle navigation" data-bs-toggle="collapse">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <!-- Navigation links -->
-        <div class="collapse justify-content-end navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link w-color translatable" href="#" data-English="Services" data-Arabic="خدمات"
-                        data-Kurdish="kord"></a>
-                </li>
-                <li class="nav-item"><a class="nav-link w-color translatable" href="#" data-English="Contact"
-                        data-Arabic="اتصال" data-Kurdish="kord"></a></li>
-                <li class="nav-item"><a class="nav-link w-color translatable" href="#" data-English="About"
-                        data-Arabic="معلومات" data-Kurdish="kord"></a></li>
-            </ul>
+        <div class="col d-flex flex-column">
+          <div class="text-center">
+            <img class="avatar-img" src="img/avatar1.jpg" alt="Avatar" loading="lazy">
+          </div>
+          <p class="mt-2 text-center">Nasim Rashidimehr</p>
         </div>
-    </nav>
+      </div>
+    </div>
+
+    <hr class="mt-4 mb-0">
+
+    <div class="bg-black py-4 m-0">
+      <div class="container">
+        <p class="text-center translatable"
+        data-English="We are proud to serve as your trusted legal partner in Iran, offering support and advocacy in all legal and
+          judicial matters, by delivering exceptional results before Iranian courts. <br>
+          Our legal department offers a wide range of services, including the initiation, pursuit, and defense of cases
+          involving family law, commercial disputes, civil litigation, governmental penalties(Discretionary
+          Punishments), currency and exchange regulations, company registration, residency applications, and contract
+          drafting and execution on behalf of our clients throughout Iran."
+        data-Arabic="التوجه إلى المحامي ليس آخر الحلول، بل هو الحل الأول والأمثل في متابعة القضايا القانونية.
+إذا كنت بحاجة إلى مساعدة شخصية في الشؤون القانونية في إيران، فإن أفضل خيار هو الاستعانة بمحام يمكنك توكيله جميع أمورك القانونية والإدارية في دولة إيران.
+يمكن لفريقنا من خبراء ومحامين مجربین مساعدتك عبر:
+تقديم الاستشارة في جميع صيغ الدعاوى القانونية ورفعها ومتابعة إجراءاتها.
+متابعة جميع القضايا المدنية والجنائية والتجارية في المحاكم الإيرانية. 
+توفير الحلول للمشاكل والدعاوى والقضايا القانونية وتقديم الخدمات القانونية للرعايا الأجانب والسیاح في إيران.
+توثيق وإبرام مختلف العقود التجارية والمراسلات لتبادل السلع والخدمات بين رواد الأعمال.
+حماية المصالح القانونية والتجارية."
+        data-Kurdish="چوون بۆ لای پارێزەر دوایین ڕێگە چارەسەر نییە، بەڵکو یەکەم و باشترین ڕێگەیە
+ئەگەر پێویستان بە یارمەتییە، لە تەواوی بابەتە یاساییەکان لە وڵاتی ئێران، ئەوە پارێزەران باشترین بژاردەن بۆتان. بۆ چارەسەركردن و ڕێكخستی تەواوی کارە یاسایی و فەرمیکانتان لە وڵاتی ئێران، دەتوانن بە گرتنی پارێزەرێکی بە ئەزموون و لێهاتوو كارەكانت بە باشترین شێوە بۆ ئەنجام بدرێ.
+لە ڕووی داواکارییە یاسایی، تاوانکاری و بازرگانییەکان لە چوارچێوەی دەسەڵاتی قەزایی و یاسایی لە  ولاتی ئێران و هەروەها چارەسەرکردنی کێشەکان و پێشکەشکردنی ڕاوێژكاریی یاسایی بە ئێوەی بەڕێز، پەیوەندیمان پێوە بكەن"
+        >
+        </p>
+      </div>
+    </div>
+
+    <hr class="my-4 mt-0">
+
+
+    <div class="m-2 row">
+      <div class="col-md-4 col-sm-12 p-4 border-end">
+        <h4 class="translatable" data-Arabic="رقم الاتصال" data-Kurdish="ژمارەی تەلەفۆن:" data-English="Contact Us"></h4>
+        <div class="row">
+          <div class="col-1"></div>
+          <span class="col-11">(021) 44428406</span>
+        </div>
+
+        <div>
+          <h4 class="translatable" data-Arabic="العنوان" data-English="Location" data-Kurdish="ناونیشان"></h4>
+          <div class=" row">
+            <div class="col-1"></div>
+            <span class="col-11 translatable"
+            data-English="Unit 18, 4th floor(northern), No 2, Beheshtan 6 alley, Pasdaran Ave, Tehran,
+            Iran"
+            data-Arabic="طهران، شارع پاسداران، زقاق بهستان السادس، رقم العمارة ٢ (؟)، الطابق الرابع، الشقة رقم 18."
+            data-Kurdish="تاران،شەقامی پاسداران، بهستانی ٦ ، پلاک ٢، یەکەی ١٨، "
+            ></span>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="col-sm-12 col-md-8 row align-items-center mt-3">
+
+        <div class="col text-center">
+          <img class="logo-img" src="img/logos/d2.png" alt="logo" loading="lazy">
+        </div>
+        <div class="col text-center">
+          <img class="logo-img" src="img/logos/d1.png" alt="logo" loading="lazy">
+        </div>
+        <div class="col text-center">
+          <img class="logo-img" src="Svgs/logo/legaleyes-logo-blue.svg" alt="logo" loading="lazy">
+        </div>
+      </div>
+    </div>
+    <hr class="my-4">
+    <div class="text-center">
+      <p>...</p>
+    </div>
+  </footer>
+
+  <!-- Bootstrap and Custom JavaScript -->
+  <script src="./js/jsBootStrapFiles/bootstrap.bundle.min.js"></script>
+  <script src="./js/Mainjs/Main.js"></script>
 </body>
 
 </html>
