@@ -59,3 +59,4 @@ function ChangeLanguage(buttonElement)
   const changeLanguageButton = document.getElementById("LanguageDropDown");
   changeLanguageButton.textContent = buttonElement.textContent;
 }
+

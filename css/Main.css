@@ -227,3 +227,51 @@ select{
 select option{
   background: rgba(0, 0, 0, 1) !important;
 }
+
+
+
+
+.form-container {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 10px;
+  display: -webkit-inline-flex;
+  position: relative;
+
+
+
+}
+.form-container h2 {
+  padding-top: 10%;
+}
+.form-container input, .form-container textarea {
+  margin-inline: 10px;
+  min-width: 100%;
+  padding: 10px;
+  margin: 10px;
+  border: none;
+  border-radius: 5px;
+}
+.form-container input[type="text"], .form-container input[type="email"], .form-container input[type="tel"] {
+  background: #333;
+  color: white;
+}
+.form-container textarea {
+  background: #333;
+  color: white;
+  height: 100px;
+}
+.form-container button {
+  background: #007bff;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: flex;
+  justify-self: center;
+
+  
+}
+.form-container button:hover {
+  background: #0056b3;
+}
